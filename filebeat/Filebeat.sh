@@ -40,7 +40,7 @@ fi
 # " > /etc/yum.repos.d/elasticsearch.repo
 
 
-cp /home/ec2-user/11.5.create_ELK_frontend_filebeat/elasticsearch.repo /etc/yum.repos.d/elasticsearch.repo &>>$LOGFILE
+cp /home/ec2-user/11.5.create_ELK_frontend_filebeat/filebeat/elasticsearch.repo /etc/yum.repos.d/elasticsearch.repo &>>$LOGFILE
 VALIDATE $? "adding repo for elasticsearch"
 
 yum install filebeat -y &>>$LOGFILE

@@ -7,7 +7,7 @@ resource "aws_instance" "ec2_instance" {
         volume_size           = 100
         delete_on_termination = true
     }
-    user_data = file("${path.module}/Filebeat.sh")
+    user_data = file("${path.module}/install_filebeat.sh")
 
     tags = {
         Name = "ELK_Frontend_Filebeat"

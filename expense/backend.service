@@ -3,7 +3,7 @@ Description = Backend Service
 
 [Service]
 User=expense
-Environment=DB_HOST="elk.lithesh.shop"
+Environment=DB_HOST="filebeat.lithesh.shop"
 ExecStart=/bin/node /app/index.js
 SyslogIdentifier=backend
 
